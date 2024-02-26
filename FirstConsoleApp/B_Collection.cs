@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 class Coll
 {
     void Learn()
@@ -19,6 +21,16 @@ class Coll
         int[][] studentsInClassRoom2 =[[1,2,3],[3,4],[2,4,5,6]];
 
         // Collections
-        
+        List<int> ageList = [3,4,5,7,7,8];
+        List<string> nameList = ["anjali", "anisha", "rekha"]; //O(n) , n=3000000
+         
+         Dictionary<string, long> countryPopulation = new();
+         countryPopulation.Add("Nepal", 2342342342);
+         countryPopulation.Add("India",7927298945);
+         countryPopulation.Add("USA",38427911);
+         countryPopulation.Add("China", 234234256753);
+
+    var p = countryPopulation["India"];
+
     }
 }
