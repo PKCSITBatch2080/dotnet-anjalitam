@@ -13,7 +13,13 @@ using System;
     name=n;
     RollNumber= rn;
     }
-    string name;
+     public Student(string n, byte rn, DateTime dob)
+    {
+    name=n;
+    RollNumber= rn;
+    Dob= dob;
+    }
+    public string name;
     byte rollNumber;
     public byte RollNumber
     {
@@ -31,7 +37,7 @@ using System;
     }
     public string Address{get; set;} //Auto implemented property
      public DateTime Dob{get;}
-    
+
       
 public virtual void DisplayInfo()
 {
