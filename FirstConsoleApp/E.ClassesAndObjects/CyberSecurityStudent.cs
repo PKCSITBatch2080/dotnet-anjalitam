@@ -1,6 +1,6 @@
 using System;
 using System.Reflection.Metadata;
-
+//Multilevel inheritance 
 class CyberSecurityStudent: CSStudent
 {
 
@@ -20,4 +20,8 @@ public CyberSecurityStudent(string name, byte rn, string pTitle, string certific
         Console.WriteLine($"Certification: {SecurityCertification}");
         Console.WriteLine($"Certified Date: {CertifiedDate}");
     } 
+    public static void Do()
+    {
+      
+    }
 }

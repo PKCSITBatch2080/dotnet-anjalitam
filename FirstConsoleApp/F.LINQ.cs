@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates; //where is inthis namespace // link contained classes 
 
 class LINQLearner
 {
@@ -49,8 +48,6 @@ class LINQLearner
     //Get youngest student 
     var youngestStudent = students.OrderByDescending(x => x.Dob).First();
     youngestStudent = students.MaxBy(x => x.Dob);
-
-    
 
     }
 }
