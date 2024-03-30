@@ -20,6 +20,7 @@ using System;
     Dob= dob;
     }
     public string name;
+    public static string collegeName;
     byte rollNumber;
     public byte RollNumber
     {
