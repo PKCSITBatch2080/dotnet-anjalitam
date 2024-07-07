@@ -1,20 +1,26 @@
-<h2>New Tech Program  Entry </h2>
+@model CollegeProgram
+
+<h2>New Tech Program Entry</h2>
 
 <form action="/program/add" method="post">
-  <div class="col-md-6">
-    <label  class="form-label">Name</label>
-    <input type="password" class="form-control" id="inputPassword4">
-  </div>
-  <div >
-    <label  class="form-label">Affiliation</label>
-    <input type="password" class="form-control" id="inputPassword4">
-  </div>
-  <div >
-    <label  class="form-label">Established Date</label>
-    <input type="date" class="form-control" >
+ 
+  <div>
+    <label class="form-label">Name</label>
+    <input asp-for="Name" type="text" class="form-control">
   </div>
 
-  <div class="mt-2">
-    <button type="submit" class="btn btn-primary">Save Program</button>
+  <div>
+    <label class="form-label">Affliation</label>
+    <input asp-for="Affliation" type="text" class="form-control">
   </div>
+
+  <div>
+    <label class="form-label">Established</label>
+    <input asp-for="Started" type="date" class="form-control">
+  </div>
+
+  <div>
+    <button type="submit" class="btn btn-primary mt-2">Save Program</button>
+  </div>
+
 </form>

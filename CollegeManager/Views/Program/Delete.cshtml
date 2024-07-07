@@ -1,0 +1,13 @@
+@model CollegeProgram
+
+<h2 class="text-danger">Do you want to delete @Model.Name program entry?</h2>
+
+<form action="/program/delete" method="post">
+ 
+ <input type="hidden" asp-for="Id" />
+  <div>
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a href="/program/index" class="btn btn-success">Cancel</a>
+  </div>
+
+</form>

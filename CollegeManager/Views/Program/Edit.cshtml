@@ -1,0 +1,27 @@
+@model CollegeProgram
+
+<h2>Update College Program</h2>
+
+<form action="/program/edit" method="post">
+ 
+ <input type="hidden" asp-for="Id" />
+  <div>
+    <label class="form-label">Name</label>
+    <input asp-for="Name" type="text" class="form-control">
+  </div>
+
+  <div>
+    <label class="form-label">Affliation</label>
+    <input asp-for="Affliation" type="text" class="form-control">
+  </div>
+
+  <div>
+    <label class="form-label">Established</label>
+    <input asp-for="Started" type="date" class="form-control">
+  </div>
+
+  <div>
+    <button type="submit" class="btn btn-primary mt-2">Save Program</button>
+  </div>
+
+</form>
